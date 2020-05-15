@@ -14,7 +14,9 @@ app = Flask(__name__)
 def static_content(content):
     return render_template(content)
 
-
+@app.route('/', methods=['GET'])
+def index():
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
