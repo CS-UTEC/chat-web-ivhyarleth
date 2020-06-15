@@ -33,6 +33,9 @@ $(function () {
             allowEditing: false
         }, {
             dataField: "content"
+        },{
+            dataField: "sent_on",
+            allowEditing: false
         }, {
             dataField: "user_from_id"
         }, {

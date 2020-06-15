@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Chat</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/chat.css">
+    <script src="/static/js/libs/bootstrap.min.js"></script>
+    <script src="/static/js/libs/jquery-3.3.1.js"></script>
+    <script src="/static/js/chat.js"></script>
+  </head>
+  <body>
+    <div class="container" id="contenedor">
+      <div class="row text-center">
+        <div class="col-3 button_contacts">
+          <div class="container" >
+            <div class="row justify-content-center mb-3">
+              <button type="button" class="btn btn-outline-light" onclick="get_current()">USUARIOS</button>
+            </div>
+            <div class="row">
+              <input type="text" class="input-group input-group-sm mb-3 form-control" placeholder="Buscar usuario" id="search" onkeyup="lookup()">
+            </div>
+          </div>
+          <div id="contacts" class="container text-center">
+          </div>
+        </div>
+          <div id="message" class="justify-content-center col-9">
+            <div class="row justify-content-end" id="logout">
+              <button type="button" class="btn btn-outline-primary" onclick="logout()"> SALIR </button>
+            </div>
+            <div class="row">
+              <div class="container" id="chat">
+              </div>
+            </div>
+            <div class="row justify-content-center" id="cajita">
+              <!--<input type="text" size="15" maxlength="30" value="" name="enviarmsg">-->
+              <div class="col-10">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" id="textContent" name="textContent">
+                </div>
+              </div>
+              <div class="col-2">
+                <button type="button" class="btn btn-primary" id="botonMensaje" name="botonMensaje" onclick="sendMessages()"> ENVIAR </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+   </body>
+</html>

@@ -13,8 +13,13 @@ function login() {
     dataType: 'json',
     contentType: 'application/json',
     success: function(data){
-      console.log("authenticate:)");
-      alert("200");
+      if (data['message'] == 'ok'){
+        alert("authenticate:)");
+        window.location="/static/html/chat.html";
+      }
+      else {
+        alert("incorrecto");
+      }
     },
     data: JSON.stringify(credentials)
   });

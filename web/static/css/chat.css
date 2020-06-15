@@ -1,0 +1,60 @@
+* {
+  margin:0;
+  padding:0;
+  }
+body {
+  background:#FFFFFF;
+  font-family:courier;
+}
+#contenedor {
+  margin:0 auto;
+  width:100%;
+}
+#message {
+  background-color:#EBF5FB;
+  float:left;
+  /*height:600px;*/
+  padding:15px;
+  /*width:500px;*/
+}
+#contacts {
+  padding:10px 15px;
+  overflow-x:hidden;
+  overflow-y: auto;
+  height: 600px;
+}
+.button_contacts {
+  background-color:#85C1E9;
+  padding:10px;
+  width:100%;
+  justify-content: center;
+
+}
+/* width */ ::-webkit-scrollbar { width: 7px; } /* Track */ ::-webkit-scrollbar-track { background: #f1f1f1; } /* Handle */ ::-webkit-scrollbar-thumb { background: #888; } /* Handle on hover */ ::-webkit-scrollbar-thumb:hover { background: #555; }
+.userbox {
+  background:#FFFFFF;
+  font-family:courier;
+  padding:5px;
+  width:100%;
+}
+#chat{
+  height:540px;
+  width:100%;
+  padding:20px;
+}
+#cajita{
+  height:60px;
+  width:100%;
+  padding:20px;
+}
+#to{
+  justify-content: flex-end;
+  width:50%;
+}
+#from{
+  justify-content: flex-start;
+  width:50%;
+}
+#logout{
+  padding:20px;
+}
